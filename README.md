@@ -35,15 +35,15 @@ docker run -p 8080:80 nolonger89/2025cloud:nginx-site
 ### 📦 自動化流程圖
 
 ```
-程式碼 Push 到 main
-        │
-        ▼
-GitHub Action 啟動 (`build-and-push.yml`)
-        │
-        ├─ 建立 Python App 的 Docker Image
-        ├─ 建立 Nginx Site 的 Docker Image
-        │
-        └─ 推送至 Docker Hub (nolonger89/2025cloud)
+程式碼 Push 到 main         
+        │               
+        ▼               
+GitHub Action 啟動 (`build-and-push.yml`)               
+        │                   
+        ├─ 建立 Python App 的 Docker Image              
+        ├─ 建立 Nginx Site 的 Docker Image          
+        │               
+        └─ 推送至 Docker Hub (nolonger89/2025cloud)             
 ```
 
 ### 🏷️ Tag 設計邏輯
@@ -55,4 +55,3 @@ GitHub Action 啟動 (`build-and-push.yml`)
 
 每次 `main` 分支更新時就會重新建立並推送最新版本的 image，tag 不會變動（即會覆蓋舊版）。
 
----
