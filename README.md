@@ -20,13 +20,14 @@ A basic static HTML site served by Nginx.
 cd python-app
 docker build -t yourname/2025cloud:python-app .
 docker run yourname/2025cloud:python-app
-
+```
 
 ### Nginx Site
+```bash
 cd nginx-site
 docker build -t nolonger89/2025cloud:nginx-site .
 docker run -p 8080:80 nolonger89/2025cloud:nginx-site
-
+```
 
 ## CI/CD: Automated Docker Build & Tagging
 
