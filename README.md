@@ -34,7 +34,7 @@ docker run -p 8080:80 nolonger89/2025cloud:nginx-site
 
 ### 📦 自動化流程圖
 
-```
+```text
 程式碼 Push 到 main         
         │               
         ▼               
