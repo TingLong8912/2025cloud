@@ -18,8 +18,8 @@ A basic static HTML site served by Nginx.
 
 ```bash
 cd python-app
-docker build -t yourname/2025cloud:python-app .
-docker run yourname/2025cloud:python-app
+docker build -t nolonger89/2025cloud:python-app .
+docker run nolonger89/2025cloud:python-app
 ```
 
 ### Nginx Site
