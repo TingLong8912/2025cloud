@@ -1,7 +1,9 @@
 name: Docker Build
 
-on:  
-  workflow_dispatch:  
+on:
+  push:
+    branches:
+      - main  # 每次 push 到 main 就會自動執行
 
 jobs:
   build:
